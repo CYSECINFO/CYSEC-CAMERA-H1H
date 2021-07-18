@@ -1,6 +1,7 @@
 #!/bin/bash
-# Powered by CYSEC INTELLIGENCE COMMUNITY
-
+# CamPhish v1.0
+# Powered by Cysec community
+# Credits goes to thelinuxchoice [github.com/thelinuxchoice/]
 
 trap 'printf "\n";stop' 2
 
@@ -14,7 +15,9 @@ clear
 dependencies() {
 
 
-command -v php > /dev/null 2>&1 || { echo >&2 "I require php but it's not installed. Install it by executing pkg Install php
+command -v php > /dev/null 2>&1 || { echo >&2 "I require php but it's not installed. Install it. Aborting."; exit 1; }
+ 
+
 
 }
 
